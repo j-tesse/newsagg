@@ -55,12 +55,12 @@ Node.js v22.5+ (uses `node:sqlite`), TypeScript strict + ES modules. Fastify bac
 {
   "feeds": ["https://..."],
   "rssPollInterval": { "default": "10m", "overrides": { "<url substring>": "<dur>" } },
-  "ai": { "backend", "url", "model", "maxContextTokens", "apiKey?", "statusWindowMs", "requestTimeoutMs" },
+  "ai": { "backend", "url", "model", "maxContextTokens", "apiKey?", "statusWindowMs", "requestTimeoutMs", "maxConcurrency" },
   "embedding": { "model", "batchSize", "candidateThreshold", "candidateMinK", "candidateMaxK" },
   "consolidator": { "statusWindowMs" },
   "aggregator": { "intervalMs", "workers" },
   "dupes": { "maxCandidates" },
-  "server": { "port", "uiDir" },
+  "server": { "port", "uiDir", "registrationEnabled" },
   "dbPath": "./newsagg.db"
 }
 ```

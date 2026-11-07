@@ -35,6 +35,10 @@
     "intervalMs": 900000,
     "workers": 2
   },
+  "dupes": {
+    "_comment": "Number of most-similar topic pairs surfaced per /dupes scan.",
+    "maxCandidates": 10
+  },
   "server": {
     "port": 3000,
     "uiDir": "./ui/build",
